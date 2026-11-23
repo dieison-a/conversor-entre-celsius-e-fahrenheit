@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão de temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Conversão de temperatura</h1>
+
+        <form action="converteTemperatura.php" method="post">
+            <label for="temperatura">Valor da temperatura:</label>
+            <input type="number" name="temperatura" id="temperatura" step="0.1" required />
+
+            <p>Escala de origem:</p>
+            <label><input type="radio" name="escala" value="celsius" checked /> Celsius</label>
+            <label><input type="radio" name="escala" value="fahrenheit" /> Fahrenheit</label>
+
+            <p>Converter para:</p>
+            <label><input type="radio" name="destino" value="fahrenheit" checked /> Fahrenheit</label>
+            <label><input type="radio" name="destino" value="celsius" /> Celsius</label>
+
+            <button type="submit">Converter</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+
+</html>
